@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "Jetbrains Mono"
+    src; 
+        local("Jetbrains Mono"),
+        url(JetBrainsMonoNerdFont-Medium.ttf) format("Medium");
+}
