@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --fg-primary: 12vh;
+    --fg-secondary: 3vh;
+    --fg-date: 6vh;
+    --fg-list: 2vh;
+    --icon: 3vh;
+
+    --fg: #F8F8F2;
+    --sfg: #6272A4;
+
+
+    --accent: #50FA7B;
+    --accent2: #FF79C6;
+    --background: #282A36;
+    --bg2: #44475A;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jetbrains Mono';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#greeting {
+    color: var(--fg);
+    font-size: var(--fg-primary);
+    font-weight: bolder;
+    display: grid;
+    text-align: right;
+    grid-column: 1/-1;
+    padding-left: 1em;
+}
+
+#date {
+    color: var(--accent);
+    font-size: var(--fg-date);
+    display: grid;
+    text-align: right;
+    grid-column: 1/-1;
+    padding-left: 1em;
+}
+
+#links {
+    display: grid;
+    row-gap: 0.5em;
+    text-align: right;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header {
+    color: var(--accent2);
+    font-size: var(--fg-secondary);
+    padding-bottom: 0.25em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: var(--fg);
+    font-size: var(--fg-list);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--sfg);
+    font-style: italic;
+}
